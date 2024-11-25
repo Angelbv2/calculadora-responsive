@@ -1,0 +1,192 @@
+/* Variables para colores y diseño */
+:root {
+    --color-light-bg: #f4f4f4;
+    --color-dark-bg: #333;
+    --color-dark-text: #333;
+    --color-light-text: #f4f4f4;
+    --color-accent: #007bff;
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light-bg);
+    color: var(--color-light-text);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar {
+    background-color: var(--color-accent);
+    color: var(--color-light-text);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-light-text);
+    text-decoration: none;
+  }
+  
+  .navbar .mode-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--color-light-text);
+    cursor: pointer;
+  }
+  .btn.copy {
+    background-color: #6c757d;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn.copy:hover {
+    background-color: #5a6268;
+  }
+  
+  
+  .calculator-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .calculator {
+    background-color: var(--color-light-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+  }
+  
+  .calculator input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .operator {
+    background-color: #ff9800;
+  }
+  
+  .operator:hover {
+    background-color: #f57c00;
+  }
+  
+  .equals {
+    background-color: #4caf50;
+    grid-column: span 2;
+  }
+  
+  .equals:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Estilos pie de página */
+  footer {
+    background-color: var(--color-accent);
+    text-align: center;
+    padding: 0.01rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: var(--color-light-text);
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text);
+    
+
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #333;
+  }
+  
+  body.dark-mode .calculator {
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text);
+  }
+  
+  body.dark-mode .btn {
+    background-color: #444;
+    color: var(--color-light-text);
+  }
+  
+  body.dark-mode .btn:hover {
+    background-color: #555;
+  }
+  /* Scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+    height: 10px; /* Altura del scrollbar horizontal */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--color-light-bg); /* Fondo del track (pista) */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-accent); /* Color del thumb (deslizador) */
+    border-radius: 5px;
+    border: 2px solid var(--color-light-bg); /* Espacio entre el thumb y el track */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cambia el color cuando se pasa el mouse */
+  }
+  
+  /* Modo oscuro para el scrollbar */
+  body.dark-mode ::-webkit-scrollbar-track {
+    background: var(--color-dark-bg);
+  }
+  
+  body.dark-mode ::-webkit-scrollbar-thumb {
+    background: var(--color-dark-text);
+    border-color: var(--color-dark-bg);
+  }
+  
